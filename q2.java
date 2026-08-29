@@ -5,6 +5,15 @@ import java.util.Scanner;
 
 
 public class q2 {
+    static void prtarr(boolean[] arr,int n) {
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] != false) {
+                count++;
+            }
+        }
+        System.out.println("The no of student present are:" + count);
+    }
      public static void main(String[] args) {
          Scanner sc = new Scanner(System.in);
          System.out.println("Enter the total no of students");
@@ -14,12 +23,6 @@ public class q2 {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextBoolean();
         }
-         int count = 0;
-         for (int i = 0; i <n; i++) {
-             if (arr[i] != false) {
-                 count++;
-             }
-         }
-         System.out.println("The no of student present are:"+ count);
+         prtarr(arr,n);
      }
 }
