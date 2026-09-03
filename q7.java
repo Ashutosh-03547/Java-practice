@@ -1,21 +1,19 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class q7 {
     static void duplicate(int[] arr) {
-        int a = arr[0];
-        int i=0;
-        while (i < 5) {
-            if (arr[i] <= arr[i+1]) {
-                
-                i++;
+        for (int i = 0; i < 5; i++) {
+            if (arr[i]==arr[i+1]) {
+                System.out.println("duplicate found" + arr[i]);
+                for (int j = i; j < 5; j++) {
+                    arr[j] = arr[j + 1];
+                }
 
             } else {
-                int temp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = temp;
-                i++;
+                System.out.println("fine");
             }
         }
+        
         for (int j = 0; j < 5; j++) {
             System.out.println(arr[j]);
         }
