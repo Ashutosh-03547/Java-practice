@@ -11,8 +11,13 @@ public class q11 {
         }
         return true;
     }
+
     public static void main(String[] args) {
-        String s = "abbca";
-        System.out.println(palindrome(s));
+        String s = "abba";
+        if (palindrome(s)) {
+            System.out.println("true");
+        } else {
+            System.out.println("False");
+        }
     }
 }
