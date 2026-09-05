@@ -12,7 +12,7 @@ public class q11 {
         return true;
     }
     public static void main(String[] args) {
-        String s = "abba";
-        System.out.println(isPalindrome(s));
+        String s = "abbca";
+        System.out.println(palindrome(s));
     }
 }
